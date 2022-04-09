@@ -1,0 +1,64 @@
+<!-- <form action="" id="form1" #frm="ngForm" (ngsubmit)="submit(frm)">
+    <mat-card class="example-card">
+     
+      <mat-card-title>Update User</mat-card-title>
+      <hr>
+      <br>
+      
+      <mat-card-content>
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput  value="" name="firstname" #firstname="ngModel" ngModel required>
+            <div style="color: red;" *ngIf="!firstname.valid&& firstname.touched">
+              First Name is Required
+            </div>
+          </mat-form-field>
+    
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput value="" name="lastname" #lastname="ngModel" ngModel required>
+            <div style="color: red;" *ngIf="!lastname.valid&& lastname.touched">
+              Last Name is Required
+            </div>
+          </mat-form-field>
+          
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Date Of Birth</mat-label>
+            <input type=date matInput  value="" name="date" #date="ngModel" ngModel required>
+            <div style="color: red;" *ngIf="!date.valid&& date.touched">
+              date of birth is Required
+            </div>
+          </mat-form-field>
+    
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1" input type="radio" name="gender" [value]="1">Male</mat-radio-button>
+            <mat-radio-button value="2" input type="radio" name="gender"[value]="2">Female</mat-radio-button>
+          </mat-radio-group>
+    
+          <br> <br>
+    
+          
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Mail</mat-label>
+            <input type="mail" matInput  value="" name="email"#email="ngModel"ngModel required minlength="5"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$ ">
+            <div style="color: red;" *ngIf="!email.valid&& email.touched">
+               <div *ngIf="email.errors?.['required']">
+               Email is required
+               </div>
+               <div *ngIf="email.errors?.['pattern']"></div>
+               enter proper format
+            </div>
+          </mat-form-field>
+          
+        
+        </form>
+        
+        
+      </mat-card-content>
+      <mat-card-actions>
+        <button type="reset" mat-raised-button color="warn">Cancel</button>
+        <button type="submit" mat-raised-button color="accent">Register</button>
+      </mat-card-actions>
+    </mat-card>
+    </form> -->

@@ -1,0 +1,27 @@
+<table class="table table-bordered" style="border: 1px solid grey;">
+  <thead>
+    <tr>
+      <th scope="col">SlNo</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">DOB</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Email</th>
+      <th colspan="2">Operations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of data; index as i">
+      <th scope="row">{{i+1}}</th>
+      <td>{{d['f_name']}}</td>
+      <td>{{d['l_name']}}</td>
+      <td>{{d['dob']}}</td>
+      <td>{{d['gender']}}</td>
+      <td>{{d['email']}}</td>
+      <td><button mat-icon-button data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="updateuser(d['id'])"><mat-icon color="primary">edit</mat-icon></button></td>
+      <td><button mat-icon-button><mat-icon color="warn" (click)="deleteuser(d.id)">delete</mat-icon></button></td>
+      
+    </tr>
+    
+  </tbody>
+</table>
